@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <event-block sid="883985494670027">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="266044326904098" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="633248177451086" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="377621199110804" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
