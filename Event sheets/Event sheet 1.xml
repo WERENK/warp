@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="warp" sid="263662308458558" static="0" type="number">0</variable>
+        <variable constant="0" name="y" sid="457760991809429" static="0" type="number">0</variable>
+        <variable constant="0" name="x" sid="452357934260210" static="0" type="number">0</variable>
+        <event-block sid="895936071809168">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="393981755213725" type="Keyboard">
+                    <param id="0" name="Key">71 (G)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="552726181669065" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+                <action id="-10" name="Add to" sid="383979606147950" type="System">
+                    <param id="0" name="Variable">warp</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="120784139874429">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="305045971651339" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="455889391709941" type="System">
+                    <param id="0" name="Variable">x</param>
+                    <param id="1" name="Value">Player.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="691419774663731" type="System">
+                    <param id="0" name="Variable">y</param>
+                    <param id="1" name="Value">Player.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="967558943557278" type="Position">
+                    <param id="0" name="Text">&quot;x= &quot; &amp; x &amp; &quot; | &quot; &amp; &quot;y= &quot; &amp; y</param>
+                </action>
+                <action id="0" name="Set text" sid="651803761647102" type="Warp">
+                    <param id="0" name="Text">warp</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="687989803083305">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="455559011775073" type="Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">Ground.Y+100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="348833752889185" type="System">
+                    <param id="0" name="Layout">Layout 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668971588289142">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="869766226550185" type="System" />
+                <condition id="-14" name="Compare variable" sid="173071818305952" type="System">
+                    <param id="0" name="Variable">warp</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="178502883671959" type="Player">
+                    <param id="0" name="X">x</param>
+                    <param id="1" name="Y">y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

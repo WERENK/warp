@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-block sid="248446121081659">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="872787211351778" type="Keyboard">
+                    <param id="0" name="Key">71 (G)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="453408304847497" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="693157063928699">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="853235893938910" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="936283076592749" type="Player">
+                    <param id="0" name="X">x</param>
+                    <param id="1" name="Y">y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="517769068361675">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="724587164085840" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="690660410398379" type="System">
+                    <param id="0" name="Variable">x</param>
+                    <param id="1" name="Value">Player.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="894772026957462" type="System">
+                    <param id="0" name="Variable">y</param>
+                    <param id="1" name="Value">Player.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="469555283334075" type="Position">
+                    <param id="0" name="Text">&quot;x= &quot; &amp; x &amp; &quot; | &quot; &amp; &quot;y= &quot; &amp; y</param>
+                </action>
+                <action id="0" name="Set text" sid="259377318013754" type="Warp">
+                    <param id="0" name="Text">&quot;Warp: &quot; &amp; warp</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
